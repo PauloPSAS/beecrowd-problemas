@@ -13,7 +13,6 @@ def lados():
 
 
 def tipo_de_triangulo(lo):
-
     # vai mostrar o tipo de triângulo criado
     if lo[0] >= lo[1] + lo[2]:
         print("NAO FORMA TRIANGULO")
@@ -23,12 +22,11 @@ def tipo_de_triangulo(lo):
         print("TRIANGULO OBTUSANGULO")
     elif lo[0] ** 2 < (lo[1] ** 2) + (lo[2] ** 2):
         print("TRIANGULO ACUTANGULO")
-    
+
     if lo[0] == lo[1] == lo[2]:
         print("TRIANGULO EQUILATERO")
     elif lo[0] == lo[1] or lo[0] == lo[2] or lo[1] == lo[2]:
         print("TRIANGULO ISOSCELES")
-
 
 
 la = lados()
