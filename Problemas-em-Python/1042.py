@@ -1,8 +1,7 @@
-l = list(map(int, input().split()))
+listNum = list(map(int, input().split()))
 
-for value in sorted(l):
+for value in sorted(listNum):
     print(value)
 print("")
-for value in l:
+for value in listNum:
     print(value)
-    
