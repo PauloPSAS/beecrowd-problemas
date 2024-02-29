@@ -1,2 +1,2 @@
 # beecrowd-problemas
- Problemas resolvidos no site do beecrowd.com.br
+ Desafios resolvidos no site do beecrowd.com.br
