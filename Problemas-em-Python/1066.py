@@ -8,7 +8,7 @@ for n in range(5):
         impar += 1
     if values[n] > 0:
         positivo += 1
-    else:
+    if values[n] < 0:
         negativo += 1
 print(f"{par} valor(es) par(es)")
 print(f"{impar} valor(es) impar(es)")
