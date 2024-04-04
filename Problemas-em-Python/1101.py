@@ -1,17 +1,19 @@
-soma = 0
+
 while True:
-    m, n = map(int, input().split())
     soma = 0
-    if m > n:
-        aux = m
-        m = n
-        n = aux
-    if m <= 0 or n <= 0:
+    a, b = map(int, input().split())
+
+    if a <= 0 or b <= 0:
         break
 
-    if True:
-        for i in range(m, n+1):
-            print(i, end=' ')
-            soma+=i
-        print(f"Sum={soma}")
+    elif a > b:
+        for x in range(b, a + 1):
+            print(x, end=' ')
+            soma += x
     
+    else:
+        for x in range(a, b + 1):
+            print(x, end=' ')
+            soma += x
+    
+    print(f"Sum={soma}")
