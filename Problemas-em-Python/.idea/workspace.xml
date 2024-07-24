@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71d0869a-40c8-426b-9f36-5ab2bf536f97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1110.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1873.py" afterDir="false" />
-    </list>
+    <list default="true" id="71d0869a-40c8-426b-9f36-5ab2bf536f97" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2E38aD39v38J4pWQN4feZa8nOhK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Algoritmo/jogo da velha/mainchat.py",
+    "last_opened_file_path": "D:/Algoritmo",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
