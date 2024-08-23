@@ -20,14 +20,15 @@ def main():
 
         print(f"Cidade# {n}:")
         print(' '.join(f"{listaPessoa[p]}-{p}" for p in sorted(listaPessoa.keys())))
-        
+
         consumo_medio = ConsumoFinal / total_pessoas
         resultado = f"{consumo_medio:.3f}"
         resultado = resultado[:resultado.index('.') + 3]
         print(f"Consumo medio: {resultado} m3.")
-        
+
         n += 1
         qtt = int(input())
+
 
 if __name__ == "__main__":
     main()

@@ -4,6 +4,7 @@ def soma(l, m):
         soma += v
     return soma
 
+
 def media(l, m):
     media = cont = 0
     for v in m[l]:
@@ -11,7 +12,6 @@ def media(l, m):
             media += v
             cont += 1
     return media / cont
-        
 
 
 matriz = [[0 for i in range(12)] for j in range(12)]
@@ -19,7 +19,6 @@ matriz = [[0 for i in range(12)] for j in range(12)]
 L = int(input())
 
 caractere = input().upper()
-
 
 for lista in range(12):
     for coluna in range(12):
