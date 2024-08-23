@@ -7,9 +7,7 @@ def soma(l, m):
 def media(l, m):
     media = cont = 0
     for v in m[l]:
-        if v == 0:
-            continue
-        else:
+        if v != 0:
             media += v
             cont += 1
     return media / cont
