@@ -1,1 +1,1 @@
-Ao copiar e colar os desafios no compilador do Beecrowd, remova os numeros do nome da classe deixando apenas o Main.
+Ao copiar e colar os desafios no compilador do Beecrowd, remova os numeros dos nomes das classes, deixando apenas o Main.
