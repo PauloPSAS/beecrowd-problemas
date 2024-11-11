@@ -5,8 +5,9 @@ public class Main1011 {
         Scanner input = new Scanner(System.in);
 
         int R = input.nextInt();
+        double pi = 3.14159;
 
-        double vol = (4.0 / 3.0) * Math.PI * (Math.pow(R, 3));
+        double vol = (4.0 / 3.0) * pi * (Math.pow(R, 3));
 
         System.out.printf("VOLUME = %.3f%n", vol);
     }
