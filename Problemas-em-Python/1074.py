@@ -1,29 +1,24 @@
-def positivo():
-    print("POSITIVE")
+casos = int(input())
 
+for i in range(casos):
+    numero = int(input())
 
-def negativo():
-    print("NEGATIVE")
-
-
-n = int(input())
-
-for x in range(n):
-    num = int(input())
-
-    if num == 0: # Se é 0(zero)
+    # número for 0
+    if numero == 0:
         print("NULL")
-
-    elif num % 2 == 0: # Se é par
-        print("EVEN", end=' ')
-        if num < 0:
-            negativo()
-        else:
-            positivo()
     
-    else: # Senão é ímpar
-        print("ODD", end=' ')
-        if num > 0:
-            positivo()
-        else:
-            negativo()
+    # Senão, se número é par e negativo
+    elif numero % 2 == 0 and numero < 0:
+        print("EVEN NEGATIVE")
+    
+    # Se não, se número é par e positvo
+    elif numero % 2 == 0 and numero > 0:
+        print("EVEN POSITIVE")
+    
+    # Se não, se número é ímpar e negativo
+    elif numero % 2 != 0 and numero < 0:
+        print("ODD NEGATIVE")
+    
+    # Se nenhuma condição for verdadeira, cairá no else
+    else:
+        print("ODD POSITIVE")
