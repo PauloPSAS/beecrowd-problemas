@@ -1,12 +1,32 @@
 import sys
 
-for caso in sys.stdin:
-    numPalavras, numLinhasPagina, numMaxCaracteresLinha = caso.split()
+for linha in sys.stdin:
+    linha = linha.strip()
+    if not linha:
+        continue
     
-    numPalavras = int(numPalavras)
-    numLinhasPagina = int(numLinhasPagina)
-    numMaxCaracteresLinha = int(numMaxCaracteresLinha)
+    try:
+        n, l, c = map(int, linha.split())
+        palavras = sys.stdin.readline().strip().split()
 
-    conto = input()
+        linhas_usadas = 1
+        tamanho_linha = 0
 
-    
+        for palavra in palavras:
+            tamanho_palavra = len(palavra)
+
+            if tamanho_linha == 0:
+                tamanho_linha = tamanho_palavra
+
+            elif tamanho_linha + 1 + tamanho_palavra <= c:
+                tamanho_linha += 1 + tamanho_palavra
+            
+            else:
+                linhas_usadas += 1
+                tamanho_linha = tamanho_palavra
+
+        paginas = (linhas_usadas + l - 1) // l 
+        print(paginas)
+
+    except Exception as e:
+        break
