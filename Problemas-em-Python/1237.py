@@ -12,14 +12,7 @@ for frase1 in sys.stdin:
         len1 = len(frase1)
         len2 = len(frase2)
 
-        matriz_comprimentos = []
-
-        # Cria uma matriz com 0
-        for i in range(len1 + 1):
-            linha = []
-            for j in range(len2 + 1):
-                linha.append(0)
-            matriz_comprimentos.append(linha)
+        matriz_comprimentos = [[0] * len2 + 1 for _ in range(len1 + 1)]
 
         comprimento_maximo = 0
 
