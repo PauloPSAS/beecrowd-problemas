@@ -12,18 +12,17 @@ for frase1 in sys.stdin:
         len1 = len(frase1)
         len2 = len(frase2)
 
-        matriz_comprimentos = [[0] * len2 + 1 for _ in range(len1 + 1)]
-
         comprimento_maximo = 0
 
-        # Preenche a matriz com os tamanhos das substrings comuns
-        for i in range(len1):
-            for j in range(len2):
-                if frase1[i] == frase2[j]:
-                    matriz_comprimentos[i+1][j+1] = matriz_comprimentos[i][j] + 1
+        for inicio1 in range(len1):
+            for fim1 in range(inicio1 + 1, len1 + 1):
+                substring = frase1[inicio1:fim1]
 
-                    if matriz_comprimentos[i+1][j+1] > comprimento_maximo:
-                        comprimento_maximo = matriz_comprimentos[i+1][j+1]
+                if substring in frase2:
+                    tamanho = fim1 - inicio1
+
+                    if tamanho > comprimento_maximo:
+                        comprimento_maximo = tamanho
 
         print(comprimento_maximo)
     
