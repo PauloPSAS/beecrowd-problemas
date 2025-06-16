@@ -1,30 +1,30 @@
 import sys
 
-for frase1 in sys.stdin:
-    frase1 = frase1.strip()
+entrada = sys.stdin.read().splitlines()
 
-    if not frase1:
-        continue
+i = 0
+while i < len(entrada) - 1:
+    frase1 = entrada[i]
+    frase2 = entrada[i + 1]
+    i += 2
 
-    try:
-        frase2 = input()
+    len1 = len(frase1)
+    len2 = len(frase2)
 
-        len1 = len(frase1)
-        len2 = len(frase2)
+    matriz_comprimentos = []
+    for x in range(len1 + 1):
+        linha = []
+        for y in range(len2 + 1):
+            linha.append(0)
+        matriz_comprimentos.append(linha)
 
-        comprimento_maximo = 0
+    comprimento_maximo = 0
 
-        for inicio1 in range(len1):
-            for fim1 in range(inicio1 + 1, len1 + 1):
-                substring = frase1[inicio1:fim1]
+    for x in range(len1):
+        for y in range(len2):
+            if frase1[x] == frase2[y]:
+                matriz_comprimentos[x + 1][y + 1] = matriz_comprimentos[x][y] + 1
+                if matriz_comprimentos[x + 1][y + 1] > comprimento_maximo:
+                    comprimento_maximo = matriz_comprimentos[x + 1][y + 1]
 
-                if substring in frase2:
-                    tamanho = fim1 - inicio1
-
-                    if tamanho > comprimento_maximo:
-                        comprimento_maximo = tamanho
-
-        print(comprimento_maximo)
-    
-    except Exception as e:
-        break
+    print(comprimento_maximo)
