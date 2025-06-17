@@ -1,30 +1,25 @@
-import sys
+# Estranhamente no meu da erro de time mas no de alguns colegas não dá
+def maiorSubstring(s1, s2):
+    n = len(s1)
+    m = len(s2)
+    dp = [[0] * (m + 1) for _ in range(n + 1)]
+    max_len = 0
 
-entrada = sys.stdin.read().splitlines()
+    for i in range(n):
+        for j in range(m):
+            if s1[i] == s2[j]:
+                dp[i + 1][j + 1] = dp[i][j] + 1
+                max_len = max(max_len, dp[i + 1][j + 1])
+    
+    return max_len
 
-i = 0
-while i < len(entrada) - 1:
-    frase1 = entrada[i]
-    frase2 = entrada[i + 1]
-    i += 2
 
-    len1 = len(frase1)
-    len2 = len(frase2)
+while True:
+    try:
+        string1 = input()
+        string2 = input()
 
-    matriz_comprimentos = []
-    for x in range(len1 + 1):
-        linha = []
-        for y in range(len2 + 1):
-            linha.append(0)
-        matriz_comprimentos.append(linha)
+        print(maiorSubstring(string1, string2))
 
-    comprimento_maximo = 0
-
-    for x in range(len1):
-        for y in range(len2):
-            if frase1[x] == frase2[y]:
-                matriz_comprimentos[x + 1][y + 1] = matriz_comprimentos[x][y] + 1
-                if matriz_comprimentos[x + 1][y + 1] > comprimento_maximo:
-                    comprimento_maximo = matriz_comprimentos[x + 1][y + 1]
-
-    print(comprimento_maximo)
+    except EOFError:
+        break
