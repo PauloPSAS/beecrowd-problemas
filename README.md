@@ -1,2 +1,65 @@
-# beecrowd-problemas
- Desafios resolvidos no site do beecrowd.com.br
+# 📘 Beecrowd-problemas
+
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![Licença](https://img.shields.io/github/license/PauloPSAS/beecrowd-problemas)
+![Último commit](https://img.shields.io/github/last-commit/PauloPSAS/beecrowd-problemas)
+
+
+Desafios resolvidos no site do [beecrowd](https://judge.beecrowd.com/pt/login) (antigo URI Online Judge), com foco em prática de programação, lógica e estruturas de dados.
+
+Este repositório reúne soluções desenvolvidas durante o estudo contínuo de algoritmos e programação competitiva.
+
+---
+
+## 📍 Objetivo
+
+- Praticar lógica de programação
+- Aprimorar habilidades em algoritmos
+- Consolidar conhecimento em diferentes linguagens
+- Criar um historico de aprendizado e evolução
+
+---
+
+## 🗂 Estrutura do repositório
+
+Os problemas estão separados por linguagem:
+
+```markdown
+beecrowd-problemas/
+├── java/
+│   └── ...
+├── python/
+│   └── ...
+└── README.md
+```
+
+A estrutura pode evoluir conforme novos problemas e categorias forem adicionados.
+
+---
+
+## 💻 Linguagens utilizadas
+
+- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+- ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+
+_(Outras linguagens podem ser adicionadas futuramente)_.
+
+---
+
+## 🚀 Como usar
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/PauloPSAS/beecrowd-problemas.git
+    ```
+
+2. Navegue até a pasta da linguagem desejada.
+3. Compile ou execute o código conforme a linguagem.
+
+---
+
+## 📌 Observações
+
+- As soluções seguem os enunciados oficiais do beecrowd.
+- Podem existir mais de uma forma válida de resolver um problema.
