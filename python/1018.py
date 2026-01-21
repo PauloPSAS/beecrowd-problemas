@@ -1,4 +1,5 @@
 n = int(input())
+
 print(n)
 n100 = n // 100
 n = n - n100*100
@@ -20,6 +21,7 @@ n = n - n2*2
 
 n1 = n // 1
 n = n - n1*1
+
 print('{} nota(s) de R$ 100,00'.format(n100))
 print('{} nota(s) de R$ 50,00'.format(n50))
 print('{} nota(s) de R$ 20,00'.format(n20))

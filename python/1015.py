@@ -1,4 +1,5 @@
-from math import sqrt, pow
+from math import sqrt
+
 vx = input().split()
 vy = input().split()
 x1, y1 = vx
