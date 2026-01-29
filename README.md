@@ -3,6 +3,7 @@
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 ![Licença](https://img.shields.io/github/license/PauloPSAS/beecrowd-problemas)
 ![Último commit](https://img.shields.io/github/last-commit/PauloPSAS/beecrowd-problemas)
+![GitHub repo size](https://img.shields.io/github/repo-size/PauloPSAS/beecrowd-problemas)
 
 Desafios resolvidos no site do [beecrowd](https://judge.beecrowd.com/pt/login) (antigo URI Online Judge), com foco em prática de programação, lógica e estruturas de dados.
 
