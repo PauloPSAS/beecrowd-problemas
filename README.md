@@ -4,7 +4,6 @@
 ![Licença](https://img.shields.io/github/license/PauloPSAS/beecrowd-problemas)
 ![Último commit](https://img.shields.io/github/last-commit/PauloPSAS/beecrowd-problemas)
 
-
 Desafios resolvidos no site do [beecrowd](https://judge.beecrowd.com/pt/login) (antigo URI Online Judge), com foco em prática de programação, lógica e estruturas de dados.
 
 Este repositório reúne soluções desenvolvidas durante o estudo contínuo de algoritmos e programação competitiva.
@@ -24,11 +23,13 @@ Este repositório reúne soluções desenvolvidas durante o estudo contínuo de 
 
 Os problemas estão separados por linguagem:
 
-```markdown
+```bash
 beecrowd-problemas/
 ├── java/
 │   └── ...
 ├── python/
+│   └── ...
+├── sql/
 │   └── ...
 └── README.md
 ```
@@ -37,12 +38,11 @@ A estrutura pode evoluir conforme novos problemas e categorias forem adicionados
 
 ---
 
-## 💻 Linguagens utilizadas
+## 💻 Linguagens e ferramentas utilizadas
 
 - ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 - ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
-
-_(Outras linguagens podem ser adicionadas futuramente)_.
+- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
 
 ---
 
